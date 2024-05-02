@@ -45,11 +45,13 @@ footer {
 }
 
 .logomark {
+  float: left;
+  padding-left: 1REM;
   padding-top: 1rem;
-  padding-left: 1rem;
 }
 .social-images {
-  padding-left: 35rem;
+  float: right;
+  margin-left: auto;
   padding-top: 2rem;
 }
 
