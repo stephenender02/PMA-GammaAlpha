@@ -33,7 +33,7 @@ ul li a:hover{
 header {
   width: 100%;
   display: flex;
-  background-color: white;
+  background-color: lightgray;
 }
 
 footer {
@@ -53,20 +53,44 @@ footer {
   padding-top: 2rem;
 }
 
-.Welcome {
+.welcome {
   padding-left: 50px;
-  padding-top: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom:25px;
   color: #c21136;
+}
+
+.welcome-body {
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .philanthropy-body-text {
   margin-left: 30%;
   padding-left: 20px;
   padding-top: 50px;
+  padding-right: 20px;
   color: white;
 }
 
 #carouselExampleCaptions {
-  width: 50%; /* Adjust the width as needed */
-  margin: auto; /* Center the images horizontally */
+  width: 70%;
+  margin: auto;
+}
+
+.founders-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-half-founders {
+  float: left;
+}
+
+.right-half-founders {
+  float: left;
+  margin-left: 25px;
 }
