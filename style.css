@@ -1,98 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 body {
-  background-color: #393939;
+  background-image: url(Images/JMU-236380-Sunset-Wilson-Cupola-1011-logo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
-ul {
-  margin-top: 25px;
-}
-
-ul li{
-  list-style: none;
-  display: inline-block;
-  line-height: 100px;
-}
-
-ul li a{
-  display: block;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 0 10px;
-  color: black;
-}
-
-ul li a:hover{
-  color: #c21136;
-}
-
 header {
   width: 100%;
+  height: 75px;
   display: flex;
-  background-color: lightgray;
+  justify-content: space-between;
+  padding: 30px;
 }
 
-footer {
-  display: flex;
-  background-color: #fff0b3;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 30px 20px;
 }
 
-.logomark {
-  float: left;
-  padding-left: 1REM;
-  padding-top: 1rem;
-}
-.social-images {
-  float: right;
-  margin-left: auto;
-  padding-top: 2rem;
-}
-
-.welcome {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom:25px;
-  color: #c21136;
-}
-
-.welcome-body {
+nav li a {
+  font-size: 30px;
   color: white;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-decoration: none;
 }
 
-.philanthropy-body-text {
-  margin-left: 30%;
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-right: 20px;
-  color: white;
+nav li a:hover {
+  color: #b01c2e;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
 }
 
-#carouselExampleCaptions {
-  width: 70%;
-  margin: auto;
-}
-
-.founders-list {
+main {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
 }
 
-.left-half-founders {
-  float: left;
+main h1 {
+  font-size: 150px;
+  color: #ecd898;
 }
 
-.right-half-founders {
-  float: left;
-  margin-left: 25px;
+main p {
+  font-size: 30px;
+  color: black;
+  padding: 50px;
 }
