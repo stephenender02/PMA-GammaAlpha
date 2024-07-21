@@ -96,8 +96,19 @@ footer {
   padding: 50px;
 }
 
+.contactTitle {
+  color: black;
+}
+
 .contactInfo p{
   margin: 0;
+  color: black;
+}
+
+.contactInfo p a{
+  margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .socials {
