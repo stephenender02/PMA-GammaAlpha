@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(43, 43, 43);
   font-family: 'Gill Sans';
 }
 
@@ -37,42 +37,82 @@ nav li a:hover {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 100px;
+}
+
+.aboutTitle h1{
+  padding: 0px 15%;
   font-family: Priori Sans;
-}
-
-main h1 {
-  font-size: 100px;
   color: #b01c2e;
+  font-size: 50px;
 }
 
-main p {
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  animation: fadeIn 10s;
-}
-
-.carousel {
+.mission {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
+  padding: 35px 5%;
 }
 
-#carouselExampleIndicators {
-  width: 75%;
+.mission h2 {
+  color: #a87a00;
+  font-size: 55px;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.missionBody {
+  display: flex;
+}
+
+.missionBodyText{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 5%;
+}
+
+.history h2 {
+  color: #a87a00;
+  font-size: 55px;
+}
+
+.historyBody {
+  display: flex;
+}
+
+.historyBodyText{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 5%;
+}
+
+.join h2 {
+  color: #a87a00;
+  font-size: 55px;
+}
+
+.joinBody {
+  display: flex;
+}
+
+.joinBodyText{
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 
 footer {
-  background-color: rgb(102, 101, 101);
+  background-color: rgb(75, 75, 75);
   width: 100%;
   height: 150px;
   display: flex;
