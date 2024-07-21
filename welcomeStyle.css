@@ -1,0 +1,113 @@
+body {
+  background-image: url(Images/JMU-236380-Sunset-Wilson-Cupola-1011-logo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Gill Sans';
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 30px 20px;
+}
+
+nav li a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #b01c2e;
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Priori Sans";
+  src: url("Priori-sans-Font/Priori-sans-Font/PrioriSerBold.ttf");
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  font-family: Priori Sans;
+}
+
+main h1 {
+  font-size: 100px;
+  color: #b01c2e;
+}
+
+main p {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  animation: fadeIn 10s;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#carouselExampleIndicators {
+  width: 75%;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+footer {
+  background-color: rgba(201, 201, 201, 0.4);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomLogo {
+  padding: 0px 2%;
+}
+
+.bottomLogo img {
+  width: 150px;
+}
+
+.contact{
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+}
+
+.contactInfo p{
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  padding-right: 2%;
+  padding: 50px;
+}
+
+.socials li{
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
