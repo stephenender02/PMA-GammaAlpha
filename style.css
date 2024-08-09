@@ -115,6 +115,26 @@ main {
   color: white;
 }
 
+.billPoseyVideo {
+  display: flex;
+  justify-content: center;
+}
+
+.directoryContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.execDirectory {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brotherDirectory {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 footer {
   background-color: rgb(75, 75, 75);
