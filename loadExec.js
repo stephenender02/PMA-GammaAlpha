@@ -25,5 +25,49 @@ fetch(FULL_URL)
             execPersonas[i][j] = tableData[i].c[j].v;
         }
     }
-    // Display Personas
+
+    /* DISPLAY THE PERSONAS */
+    for (var i = 0; i < NUM_EXEC; i++) {
+        // Create persona div
+        var execPersona = document.createElement('div');
+        var execDir = document.getElementsByClassName("execDirectory")[0];
+        execDir.appendChild(execPersona);
+
+        // FIXME:
+        // execPersona.setAttribute("display", "flex");
+        // execPersona.setAttribute("flex-direction", "column");
+        // execPersona.setAttribute("justify-content", "center");
+
+
+        // Add Picture
+        var picture = execPersonas[i][1];
+        var execPersonaPicture = document.createElement('img');
+        execPersonaPicture.setAttribute("src", picture);
+        execPersonaPicture.setAttribute("width", 300);
+        execPersona.appendChild(execPersonaPicture);
+        // Add Position
+        var position = execPersonas[i][0];
+        var execPersonaPosition = document.createElement('h1');
+        execPersonaPosition.textContent = position;
+        execPersonaPosition.style.color = "#a87a00";
+        execPersonaPosition.style.fontFamily = "Priori Sans";
+        execPersona.appendChild(execPersonaPosition);
+        // Add Name
+        var name = execPersonas[i][2];
+        var execPersonaName = document.createElement('h3');
+        execPersonaName.textContent = name;
+        execPersonaName.style.color = "#b01c2e";
+        execPersonaName.style.fontFamily = "Gill Sans";
+        execPersona.appendChild(execPersonaName);
+        // Add email
+        var email = execPersonas[i][3];
+        var execPersonaEmail = document.createElement('h3');
+        execPersonaEmail.textContent = email;
+        execPersonaEmail.style.color = "#b01c2e";
+        execPersonaEmail.style.fontFamily = "Gill Sans";
+        execPersona.appendChild(execPersonaEmail);
+    }
+
+    
+
 })
