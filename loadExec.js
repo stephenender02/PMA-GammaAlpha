@@ -31,13 +31,11 @@ fetch(FULL_URL)
         // Create persona div
         var execPersona = document.createElement('div');
         var execDir = document.getElementsByClassName("execDirectory")[0];
+        execPersona.style.display = "flex";
+        execPersona.style.flexDirection = "column";
+        execPersona.style.alignItems = "center";
+        execPersona.style.margin = "25px";
         execDir.appendChild(execPersona);
-
-        // FIXME:
-        // execPersona.setAttribute("display", "flex");
-        // execPersona.setAttribute("flex-direction", "column");
-        // execPersona.setAttribute("justify-content", "center");
-
 
         // Add Picture
         var picture = execPersonas[i][1];
