@@ -125,11 +125,33 @@ main {
   justify-content: space-around;
 }
 
+.execDirectoryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.execDirectoryContent h1{
+  color: #a87a00;
+  font-family: Priori Sans;
+}
+
 .execDirectory {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 2.5%;
   justify-content: space-between;
+}
+
+.brotherDirectoryContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brotherDirectoryContent h1{
+  color: #a87a00;
+  font-family: Priori Sans;
 }
 
 .brotherDirectory {
