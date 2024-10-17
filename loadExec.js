@@ -1,10 +1,10 @@
-let NUM_EXEC = 8;
+let NUM_EXEC = 10;
 let NUM_CATEGORIES = 4;
 
 // Constants for fetching info from sheet
 let SHEET_ID = "1fUK58S6qx6G4vm1xMcGLerUQtgk4auVGW5nGGwA6TCU";
-let SHEET_TITLE = "Exex Directory";
-let SHEET_RANGE = "A2:D9";
+let SHEET_TITLE = "ExecDirectory";
+let SHEET_RANGE = "A2:D11";
 let FULL_URL = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?/sheet=" + SHEET_TITLE + "&range=" + SHEET_RANGE;
 
 // Fetch info
@@ -49,6 +49,9 @@ fetch(FULL_URL)
         execPersonaPosition.textContent = position;
         execPersonaPosition.style.color = "#a87a00";
         execPersonaPosition.style.fontFamily = "Priori Sans";
+        if (position.length > 15) {
+            execPersonaPosition.style.fontSize = "1.89rem"
+        }
         execPersona.appendChild(execPersonaPosition);
         // Add Name
         var name = execPersonas[i][2];
@@ -65,7 +68,5 @@ fetch(FULL_URL)
         execPersonaEmail.style.fontFamily = "Gill Sans";
         execPersona.appendChild(execPersonaEmail);
     }
-
-    
 
 })
